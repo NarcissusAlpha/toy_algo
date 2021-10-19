@@ -30,7 +30,7 @@ int* CountingSort(int* A, int lenA)
     //          count[1] + 1;
     //       for i = 2, A[2] = 0, j = 3, count[2] + 1;
     //       for i = 3, A[3] = -1, but j = 4 makes it stop.
-    // Thus, changing A[i] < A[j] into <= makes the former element have more count, if more than one element have same value. The result keeps correct.
+    // Thus, changing A[i] < A[j] into <= makes the element with bigger index have more count, if more than one element have same value. The result keeps correct.
     for(i = 0; i < lenA - 1; ++ i)
     {
         for(j = i + 1; j < lenA; ++ j)
